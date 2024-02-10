@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-18E981826A421D32FA223B38E096BF9B" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <!--this organization is vital for the project, but cannot be shown to the user, therefore all visibility is on false-->
+  <organizations default="ORG-C582872441E86BE48BB71F2CE24AA21F" isvisible="false">
+    <organization identifier="ORG-C582872441E86BE48BB71F2CE24AA21F" structure="hierarchical" isvisible="false">
+      <title>Trivial Game</title>
+      <item identifier="ITEM-14B32A3FECCE187BAEE3C6D230E74D77" identifierref="RES-16E221AAC288333AE497B870070FDEF1" isvisible="false">
+        <title>Start</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-16E221AAC288333AE497B870070FDEF1" type="webcontent" href="inicio.html" adlcp:scormtype="asset">
+      <file href="triviaMain.html" />
+    </resource>
+</manifest>
+

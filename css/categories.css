@@ -1,0 +1,21 @@
+.history {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+.mi-boton:hover {
+    background-color: #45a049;
+}
