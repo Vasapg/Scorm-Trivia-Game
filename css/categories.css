@@ -1,11 +1,3 @@
-.history {
-    border-radius: 25px;
-    background: #73AD21;
-    padding: 20px;
-    width: 200px;
-    height: 150px;
-  }
-
   body {
     display: flex;
     flex-direction: column;
@@ -15,7 +7,25 @@
     margin: 0;
 }
 
-/* Cambio de color al pasar el ratón sobre el botón */
-.mi-boton:hover {
-    background-color: #45a049;
+.white_cell
+{
+    background-color: wheat;
+    border: 1px solid wheat;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.black_cell
+{
+    background-color: black;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    color: white;
 }

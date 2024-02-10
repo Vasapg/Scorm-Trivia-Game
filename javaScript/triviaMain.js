@@ -1,34 +1,87 @@
-// Supongamos que tienes una función para obtener categorías de una API
-function obtenerCategorias() {
-    // Aquí realizarías la lógica para obtener las categorías de una API
-    // En este ejemplo, asumiremos que las categorías se obtienen de un JSON
-    const categorias = [
-        { id: 1, nombre: "Categoría 1" },
-        { id: 2, nombre: "Categoría 2" },
-        // Puedes agregar más categorías aquí
-    ];
-    return categorias;
+function getJSONFromAPI(URL)
+{
+    fetch(URL)
+    .then(response => response.json()
+    .then(data =>
+    {
+        console.log(JSON.stringify(data));
+        localStorage.setItem('questions', JSON.stringify(data));
+    }))
+
 }
 
-// Función para mostrar las categorías en la página
-function mostrarCategorias() {
-    const categorias = obtenerCategorias();
-    const categoriasDiv = document.getElementById('categorias');
-
-    categorias.forEach(categoria => {
-        const button = document.createElement('button');
-        button.textContent = categoria.nombre;
-        button.classList.add('history');
-        button.classList.add('history');
-        button.addEventListener('click', () => {
-            // Redirigir a otra página pasando el ID de la categoría seleccionada
-            console.log("Me pulsaste")
+function fillCells()
+{
+    let board = document.getElementById("board");
+    let cells = board.getElementsByTagName("td");
+    cells = [].slice.call(cells);
+    cells.forEach(cell => {
+        if (cell.textContent == "Blank")
+        {
+            cell.classList.add("white_cell");
+            cell.textContent = "";
+        }
+        else
+        {
+            cell.classList.add("black_cell");
+            cell.textContent = "";
+        }
+        cell.addEventListener("click", () => 
+        {
+            console.log("Me clicaste: " + cell.cellIndex + ", " + cell.parentNode.rowIndex);
+            let rollButton = document.getElementById("roll");
+            rollButton.disabled = false;
+            movePlayer(cell.cellIndex, cell.parentNode.rowIndex);
         });
-        categoriasDiv.appendChild(button);
+        if (cell.cellIndex == 0 && cell.parentNode.rowIndex == 0)
+        {
+            cell.appendChild(document.createElement("img"));
+            cell.firstChild.src = "../img/Player.svg";
+        }
     });
 }
 
+movePlayer = (x, y) =>
+{
+    let player = JSON.parse(localStorage.getItem('player'));
+    let board = document.getElementById("board");
+    let cells = board.getElementsByTagName("td");
+    console.log(cells)
+    cells = [].slice.call(cells);
+    cells.forEach(cell => {
+        if (cell.firstChild != null)
+        {
+            cell.removeChild(cell.firstChild);
+        }
+    });
+    player.x += x;
+    player.y += y;
+    let cell = board.rows[player.y].cells[player.x];
+    cell.appendChild(document.createElement("img"));
+    cell.firstChild.src = "../img/Player.svg";
+    localStorage.setItem('player', JSON.stringify(player));
+}
 
+function retrieveCategories()
+{
+    let categories = JSON.parse(localStorage.getItem('questions')).results;
+    let categoryList = document.getElementById("categoryList");
+    for (let i = 0; i < categories.length; i++)
+    {
+        let category = document.createElement("li");
+        category.textContent = categories[i].category;
+        categoryList.appendChild(category);
+    }
+}
 
 // Llamamos a la función para mostrar las categorías cuando la página se carga
-window.onload = mostrarCategorias;
+getJSONFromAPI("https://opentdb.com/api.php?amount=5&difficulty=easy")
+fillCells();
+let player = {
+    name: "Player",
+    score: 0,
+    x: 0,
+    y: 0
+}
+localStorage.setItem('player', JSON.stringify(player));
+movePlayer(6,6);
