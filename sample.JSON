@@ -1,0 +1,125 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "What word represents the letter &#039;T&#039; in the NATO phonetic alphabet?",
+            "correct_answer": "Tango",
+            "incorrect_answers": [
+                "Target",
+                "Taxi",
+                "Turkey"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;",
+            "correct_answer": "Print",
+            "incorrect_answers": [
+                "Digest",
+                "Look",
+                "Read"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Cartoon &amp; Animations",
+            "question": "Which of the following is not a Flintstones character?",
+            "correct_answer": "Lord Rockingham IX",
+            "incorrect_answers": [
+                "Rockhead Slate",
+                "The Great Gazoo",
+                "Barney Rubble"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Science &amp; Nature",
+            "question": "Rhinoplasty is a surgical procedure on what part of the human body?",
+            "correct_answer": "Nose",
+            "incorrect_answers": [
+                "Ears",
+                "Chin",
+                "Neck"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Video Games",
+            "question": "In the videogame Bully, what is the protagonist&#039;s last name?",
+            "correct_answer": "Hopkins",
+            "incorrect_answers": [
+                "Smith",
+                "Kowalski",
+                "Crabblesnitch"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Sports",
+            "question": "What was the final score of the Germany vs. Brazil 2014 FIFA World Cup match?",
+            "correct_answer": "7 - 1",
+            "incorrect_answers": [
+                "0 - 1",
+                "3 - 4",
+                "16 - 0"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Sports",
+            "question": "What is the most common type of pitch thrown by pitchers in baseball?",
+            "correct_answer": "Fastball",
+            "incorrect_answers": [
+                "Slowball",
+                "Screwball",
+                "Palmball"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "On a dartboard, what number is directly opposite No. 1?",
+            "correct_answer": "19",
+            "incorrect_answers": [
+                "20",
+                "12",
+                "15"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Television",
+            "question": "What was the name of the police officer in the cartoon &quot;Top Cat&quot;?",
+            "correct_answer": "Dibble",
+            "incorrect_answers": [
+                "Barbrady",
+                "Mahoney",
+                "Murphy"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Television",
+            "question": "In the TV show &#039;M*A*S*H&#039;, what was the nickname of Corporal Walter O&#039;Reilly?",
+            "correct_answer": "Radar",
+            "incorrect_answers": [
+                "Hawkeye",
+                "Hot Lips",
+                "Trapper"
+            ]
+        }
+    ]
+}

@@ -12,7 +12,10 @@
     </organization>
   </organizations>
   <resources>
-    <resource identifier="RES-16E221AAC288333AE497B870070FDEF1" type="webcontent" href="inicio.html" adlcp:scormtype="asset">
+    <resource identifier="RES-16E221AAC288333AE497B870070FDEF1" type="webcontent" href="Rules.html" adlcp:scormtype="asset">
+      <file href="triviaMain.html"/>
+    </resource>
+    <resource identifier="RES-16E221AAC288333AE497B870070FDEF1" type="webcontent" href="triviaMain.html" adlcp:scormtype="asset">
       <file href="triviaMain.html" />
     </resource>
 </manifest>

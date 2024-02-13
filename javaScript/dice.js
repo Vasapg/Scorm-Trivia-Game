@@ -18,5 +18,24 @@ async function rollDice()
 	console.log("dice: " + result);
     let rollButton = document.getElementById("roll");
     rollButton.disabled = true;
+    player = localStorage.getItem('player');
+    player = JSON.parse(player);
+    player.diceValue = result;
+    localStorage.setItem('player', JSON.stringify(player));
+    //highLightPossibleMoves();
 	return result;
+}
+
+highLightPossibleMoves = () =>
+{
+    let player = JSON.parse(localStorage.getItem('player'));
+    let board = document.getElementById("board");
+    let cells = board.getElementsByTagName("td");
+    cells = [].slice.call(cells);
+    cells.forEach(cell => {
+        if (cell.classList.contains("black_cell"))
+        {
+            cell.classList.add("highLight");
+        }
+    });
 }
