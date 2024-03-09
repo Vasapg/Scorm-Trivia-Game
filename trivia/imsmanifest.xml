@@ -12,11 +12,8 @@
     </organization>
   </organizations>
   <resources>
-    <resource identifier="RES-16E221AAC288333AE497B870070FDEF1" type="webcontent" href="Rules.html" adlcp:scormtype="asset">
-      <file href="triviaMain.html"/>
+    <resource identifier="RES-16E221AAC288333AE497B870070FDEF1" type="webcontent" href="html/triviaMain.html" adlcp:scormtype="asset">
+      <file href="html/triviaMain.html"/>
     </resource>
-    <resource identifier="RES-16E221AAC288333AE497B870070FDEF1" type="webcontent" href="triviaMain.html" adlcp:scormtype="asset">
-      <file href="triviaMain.html" />
-    </resource>
+  </resources>
 </manifest>
-
